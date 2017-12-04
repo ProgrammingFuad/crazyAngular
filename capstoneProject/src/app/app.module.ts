@@ -23,7 +23,9 @@ import { MembersComponent } from './members/members.component';
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
       {path: 'home', component: HomeComponent},
-      {path: 'members', component: MembersComponent}
+      {path: 'members', component: MembersComponent},
+      {path: 'about', component: AboutComponent},
+      {path: 'product', component: ProductComponent}
     ])
   ],
   providers: [],
