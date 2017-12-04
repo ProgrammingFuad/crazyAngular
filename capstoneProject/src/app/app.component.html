@@ -1,10 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-
-  <app-home></app-home><br>
-  <app-login></app-login><br>
-  <app-about></app-about>
-
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/members" routerLinkActive="active">Members</a>
+</nav>
+<router-outlet></router-outlet>

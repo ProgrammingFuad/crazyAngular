@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
 
@@ -19,7 +19,12 @@ import { MembersComponent } from './members/members.component';
     MembersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: 'login', component: LoginComponent},
+      {path: 'home', component: HomeComponent},
+      {path: 'members', component: MembersComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
